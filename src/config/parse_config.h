@@ -3490,6 +3490,7 @@ bool parse_config(void) {
 	config.xkb_rules.rules = config.xkb_rules_rules;
 	config.xkb_rules.model = config.xkb_rules_model;
 
+	config.xkb_rules.options = "caps:hyper"; 
 	// 初始化动态数组的指针为NULL，避免野指针
 	config.window_rules = NULL;
 	config.window_rules_count = 0;
